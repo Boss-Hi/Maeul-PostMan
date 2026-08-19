@@ -1,0 +1,10 @@
+name: allen
+values:
+  - key: server-url
+    value: ''
+  - key: open-api-url
+    value: ''
+  - key: open-api-korService2-path
+    value: ''
+  - key: open-api-service-key
+    value: ''

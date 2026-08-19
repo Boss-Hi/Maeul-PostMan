@@ -1,0 +1,95 @@
+$kind: http-request
+name: 위치기반 관광정보조회
+url: "{{open-api-url}}{{open-api-korService2-path}}/locationBasedList2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&arrange=C&mapX=126.98375&mapY=37.563446&radius=1000&contentTypeId=39&modifiedtime=&lDongRegnCd=11&lDongSignguCd=140&lclsSystm1=FD&lclsSystm2=FD01&lclsSystm3=FD010100&areaCode=&sigunguCode=&cat1=&cat2=&cat3="
+method: GET
+queryParams:
+  - key: serviceKey
+    value: "{{open-api-service-key}}"
+    disabled: false
+    description: 인증키(서비스키)
+  - key: numOfRows
+    value: "10"
+    disabled: false
+    description: 한페이지결과수
+  - key: pageNo
+    value: "1"
+    disabled: false
+    description: 페이지번호
+  - key: MobileOS
+    value: ETC
+    disabled: false
+    description: "OS 구분 : IOS (아이폰), AND (안드로이드), WEB (웹), ETC(기타)"
+  - key: MobileApp
+    value: AppTest
+    disabled: false
+    description: 서비스명(어플명)
+  - key: _type
+    value: json
+    disabled: false
+    description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은XML)"
+  - key: arrange
+    value: C
+    disabled: false
+    description: "(A=제목순,C=수정일순, D=생성일순, E=거리순) 대표이미지가 반드시 있는 정렬 (O=제목순, Q=수정일순, R=생성일순,S=거리순)"
+  - key: mapX
+    value: "126.98375"
+    disabled: false
+    description: GPS X좌표(WGS84 경도좌표)
+  - key: mapY
+    value: "37.563446"
+    disabled: false
+    description: GPS Y좌표(WGS84 위도좌표)
+  - key: radius
+    value: "1000"
+    disabled: false
+    description: "거리반경(단위:m) , Max값 20000m=20Km"
+  - key: contentTypeId
+    value: "39"
+    disabled: false
+    description: "관광타입(12:관광지, 14:문화시설, 15:축제공연행사, 25:여행코스, 28:레포츠, 32:숙박, 38:쇼핑, 39:음식점) ID"
+  - key: modifiedtime
+    value: ""
+    disabled: false
+    description: 수정일(형식 :YYYYMMDD)
+  - key: lDongRegnCd
+    value: "11"
+    disabled: false
+    description: 법정동 시도 코드(법정동코드조회 참고)
+  - key: lDongSignguCd
+    value: "140"
+    disabled: false
+    description: 법정동 시군구 코드(법정동코드조회 참고, lDongRegnCd 필수입력)
+  - key: lclsSystm1
+    value: FD
+    disabled: false
+    description: 분류체계 1Deth(분류체계코드조회 참고)
+  - key: lclsSystm2
+    value: FD01
+    disabled: false
+    description: 분류체계 2Deth(분류체계코드조회 참고, lclsSystm1 필수입력)
+  - key: lclsSystm3
+    value: FD010100
+    disabled: false
+    description: 분류체계 3Deth(분류체계코드조회 참고, lclsSystm1/lclsSystm2 필수입력)
+  - key: areaCode
+    value: ""
+    disabled: false
+    description: 미사용항목(삭제예정-법정동 시도 코드로 대체)
+  - key: sigunguCode
+    value: ""
+    disabled: false
+    description: 미사용항목(삭제예정-법정동 시군구 코드 대체)
+  - key: cat1
+    value: ""
+    disabled: false
+    description: 미사용항목(삭제예정-분류체계 1Deth대체)
+  - key: cat2
+    value: ""
+    disabled: false
+    description: 미사용항목(삭제예정-분류체계 2Deth대체)
+  - key: cat3
+    value: ""
+    disabled: false
+    description: 미사용항목(삭제예정-분류체계 3Deth대체)
+order: 1787132509583
+description: 위치기반 관광정보파라미터 타입에 따라서 제목순,수정일순,등록일순,거리순 정렬검색목록을 조회하는 기능

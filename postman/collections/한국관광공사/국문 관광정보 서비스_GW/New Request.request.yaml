@@ -1,0 +1,65 @@
+$kind: http-request
+name: 법정동코드조회
+url: "{{open-api-url}}{{open-api-korService2-path}}/ldongCode2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=Maeul&_type=json&lDongRegnCd=11&lDongListYn=N"
+method: GET
+queryParams:
+  - key: serviceKey
+    value: "{{open-api-service-key}}"
+    disabled: false
+    description: 공공데이터포털에서 받은 인증키 (URL-Encode)
+  - key: numOfRows
+    value: "10"
+    disabled: false
+    description: 한 페이지 결과 수
+  - key: pageNo
+    value: "1"
+    disabled: false
+    description: 페이지 번호
+  - key: MobileOS
+    value: ETC
+    disabled: false
+    description: "OS 구분 : IOS (아이폰), AND (안드로이드), WEB (웹), ETC(기타)"
+  - key: MobileApp
+    value: Maeul
+    disabled: false
+    description: 서비스명(어플명)
+  - key: _type
+    value: json
+    disabled: false
+    description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은 XML)"
+  - key: lDongRegnCd
+    value: "11"
+    disabled: false
+    description: 법정동 시도코드 (lDongRegnCd 해당되는 법정동 시군구코드 조회, 입력이 없을시 전체 시도목록 호출)
+  - key: lDongListYn
+    value: N
+    disabled: false
+    description: 법정동 목록조회 여부(N:코드조회, Y:전체목록조회)
+order: 1787132509579
+description: 법정동코드 목록을 시도, 시군구 코드별 조회하는 기능
+params:
+  query:
+    - key: 'serviceKey'
+      value: '{{serviceKey}}'
+      description: '공공데이터포털에서 받은 인증키 (URL-Encode)'
+    - key: 'numOfRows'
+      value: '10'
+      description: '한 페이지 결과 수'
+    - key: 'pageNo'
+      value: '1'
+      description: '페이지 번호'
+    - key: 'MobileOS'
+      value: 'ETC'
+      description: 'OS 구분 : IOS (아이폰), AND (안드로이드), WEB (웹), ETC(기타)'
+    - key: 'MobileApp'
+      value: 'APP'
+      description: '서비스명(어플명)'
+    - key: '_type'
+      value: 'json'
+      description: '응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은 XML)'
+    - key: 'lDongRegnCd'
+      value: '11'
+      description: '법정동 시도코드 (lDongRegnCd 해당되는 법정동 시군구코드 조회, 입력이 없을시 전체 시도목록 호출)'
+    - key: 'lDongListYn'
+      value: 'N'
+      description: '법정동 목록조회 여부(N:코드조회, Y:전체목록조회)'

@@ -1,0 +1,47 @@
+$kind: http-request
+name: 분류체계 코드조회
+url: "{{open-api-url}}{{open-api-korService2-path}}/lclsSystmCode2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=Maeul&_type=json&lclsSystm1=AC&lclsSystm2=AC01&lclsSystm3=AC010100&lclsSystmListYn=N"
+method: GET
+queryParams:
+  - key: serviceKey
+    value: "{{open-api-service-key}}"
+    disabled: false
+    description: 공공데이터포털에서 받은 인증키 (URL-Encode)
+  - key: numOfRows
+    value: "10"
+    disabled: false
+    description: 한 페이지 결과 수
+  - key: pageNo
+    value: "1"
+    disabled: false
+    description: 페이지 번호
+  - key: MobileOS
+    value: ETC
+    disabled: false
+    description: "OS 구분 : IOS (아이폰), AND (안드로이드), WEB (웹), ETC(기타)"
+  - key: MobileApp
+    value: Maeul
+    disabled: false
+    description: 서비스명(어플명)
+  - key: _type
+    value: json
+    disabled: false
+    description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은 XML)"
+  - key: lclsSystm1
+    value: AC
+    disabled: false
+    description: 분류체계 1Depth 코드
+  - key: lclsSystm2
+    value: AC01
+    disabled: false
+    description: 분류체계 2Depth 코드(lclsSystm1 필수)
+  - key: lclsSystm3
+    value: AC010100
+    disabled: false
+    description: 분류체계 3Depth 코드(lclsSystm1,lclsSystm2 필수)
+  - key: lclsSystmListYn
+    value: N
+    disabled: false
+    description: 분류체계 목록조회 여부(N:코드조회, Y:전체목록조회)
+order: 1787132509580
+description: 분류체계코드목록을 1Deth, 2Deth, 3Deth 코드별 조회하는 기능

@@ -1,0 +1,39 @@
+$kind: http-request
+name: 이미지정보조회
+url: "{{open-api-url}}{{open-api-korService2-path}}/detailImage2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&contentId=126128&imageYN=Y"
+method: GET
+queryParams:
+  - key: serviceKey
+    value: "{{open-api-service-key}}"
+    disabled: false
+    description: 인증키(서비스키)
+  - key: numOfRows
+    value: "10"
+    disabled: false
+    description: 한페이지결과수
+  - key: pageNo
+    value: "1"
+    disabled: false
+    description: 페이지번호
+  - key: MobileOS
+    value: ETC
+    disabled: false
+    description: "OS 구분 : IOS (아이폰), AND (안드로이드), WEB (웹), ETC(기타)"
+  - key: MobileApp
+    value: AppTest
+    disabled: false
+    description: 서비스명(어플명)
+  - key: _type
+    value: json
+    disabled: false
+    description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은XML)"
+  - key: contentId
+    value: "126128"
+    disabled: false
+    description: 콘텐츠ID
+  - key: imageYN
+    value: Y
+    disabled: false
+    description: "이미지조회1 : Y=콘텐츠이미지조회 N=음식점 타입의 음식메뉴이미지"
+order: 1787132509589
+description: 관광정보에 매핑되는 서브이미지목록 및 이미지 저작권 공공누리유형을 조회하는 기능
