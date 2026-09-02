@@ -1,0 +1,17 @@
+$kind: http-request
+name: Itinerary Show (일정 조회)
+url: "{{server-url}}/api/itinerary/:id"
+method: GET
+pathVariables:
+  - key: id
+    value: ""
+    description: 일정 id
+body:
+  type: json
+  content: |-
+    {
+      "tour_id": 1806376,
+      "startDate": "20260901",
+      "endDate": "20260903"
+    }
+order: 4423886037762572
