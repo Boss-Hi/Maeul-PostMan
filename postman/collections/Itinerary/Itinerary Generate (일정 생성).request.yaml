@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{server-url}}/api/itinerary/generate"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "tour_id": 1806376,
+      "startDate": "20260901",
+      "endDate": "20260903"
+    }
+order: 3000040394779378

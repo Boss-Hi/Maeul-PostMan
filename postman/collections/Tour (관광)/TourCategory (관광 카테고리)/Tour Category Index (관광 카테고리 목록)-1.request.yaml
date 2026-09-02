@@ -1,0 +1,5 @@
+$kind: http-request
+name: Tour Category Index (관광 카테고리 목록)
+url: "{{server-url}}/api/tour-categories"
+method: GET
+order: 4990594429098
