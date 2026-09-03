@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{server-url}}/api/auth/login"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "email" : "admin@example.com",
+        "password" : "chamge-me"
+    }
+order: 1788420105950

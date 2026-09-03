@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{server-url}}/api/auth/register"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "email" : "admin@kraftadmin.com",
+        "password" : "passhash",
+        "nickname" : "test"
+    }
+order: 2589327325619069
