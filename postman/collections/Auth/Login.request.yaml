@@ -6,6 +6,6 @@ body:
   content: |-
     {
         "email" : "admin@example.com",
-        "password" : "chamge-me"
+        "password" : "change-me"
     }
 order: 1788420105950
