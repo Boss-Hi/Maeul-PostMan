@@ -5,8 +5,12 @@ body:
   type: json
   content: |-
     {
-      "tour_id": 1806376,
+      "tour_id": 1073801,
       "startDate": "20260901",
       "endDate": "20260903"
     }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
 order: 3000040394779378

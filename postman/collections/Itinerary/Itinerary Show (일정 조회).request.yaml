@@ -1,10 +1,9 @@
 $kind: http-request
-name: Itinerary Show (일정 조회)
 url: "{{server-url}}/api/itinerary/:id"
 method: GET
 pathVariables:
   - key: id
-    value: ""
+    value: "1"
     description: 일정 id
 body:
   type: json

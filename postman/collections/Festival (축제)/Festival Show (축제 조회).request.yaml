@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{server-url}}/api/festivals/:contentId"
+method: GET
+pathVariables:
+  - key: contentId
+    value: "1073801"
+    description: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 4080384437513754
