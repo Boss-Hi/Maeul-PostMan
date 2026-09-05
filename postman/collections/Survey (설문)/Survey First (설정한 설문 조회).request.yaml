@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{server-url}}/api/surveys/first"
+method: GET
+order: 1788617414050

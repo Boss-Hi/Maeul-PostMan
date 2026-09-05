@@ -1,4 +1,4 @@
-name: allen
+name: Live
 values:
   - key: server-url
     value: ''
@@ -8,5 +8,3 @@ values:
     value: ''
   - key: open-api-service-key
     value: ''
-  - key: bearer-token
-    secret: true

@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{server-url}}/api/festivals?arrange=C&eventStartDate=20260101&eventEndDate=20261201&areaCode=&sigunguCode=&cat1=&cat2=&cat3=&lDongRegnCd=11&lDongSignguCd=470&lclsSystm1=EV&lclsSystm2=&lclsSystm3=&modifiedtime="
+url: "{{server-url}}/api/festivals?areaCode=&sigunguCode=&cat1=&cat2=&cat3=&lDongRegnCd=11&lDongSignguCd=470&lclsSystm1=EV"
 method: GET
 queryParams:
   - key: _type
@@ -8,15 +8,15 @@ queryParams:
     description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은XML)"
   - key: arrange
     value: C
-    disabled: false
+    disabled: true
     description: 정렬구분 (A=제목순, C=수정일순, D=생성일순) 대표이미지가반드시있는정렬(O=제목순, Q=수정일순, R=생성일순)
   - key: eventStartDate
     value: "20260101"
-    disabled: false
+    disabled: true
     description: 행사시작일(형식 :YYYYMMDD)
   - key: eventEndDate
     value: "20261201"
-    disabled: false
+    disabled: true
     description: 행사종료일(형식 :YYYYMMDD)
   - key: areaCode
     value: ""
@@ -52,14 +52,16 @@ queryParams:
     description: 분류체계 1Deth(분류체계코드조회 참고)
   - key: lclsSystm2
     value: ""
-    disabled: false
+    disabled: true
     description: 분류체계 2Deth(분류체계코드조회 참고, lclsSystm1 필수입력)
   - key: lclsSystm3
     value: ""
-    disabled: false
+    disabled: true
     description: 분류체계 3Deth(분류체계코드조회 참고, lclsSystm1/lclsSystm2 필수입력)
   - key: modifiedtime
     value: ""
-    disabled: false
+    disabled: true
     description: 수정일(형식 :YYYYMMDD)
+auth:
+  type: noauth
 order: 3470908172852646

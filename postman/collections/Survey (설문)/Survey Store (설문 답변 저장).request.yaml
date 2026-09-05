@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{server-url}}/api/surveys"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "surveyId": 1,
+      "answers": [
+        {
+          "questionId": 1,
+          "selectedOptionIds": [1]
+        },
+        {
+          "questionId": 2,
+          "selectedOptionIds": [7]
+        },
+        {
+          "questionId": 3,
+          "selectedOptionIds": [1]
+        },
+        {
+          "questionId": 4,
+          "selectedOptionIds": [1]
+        }
+      ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 2468565629755931
