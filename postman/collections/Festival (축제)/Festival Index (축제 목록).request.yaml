@@ -1,50 +1,35 @@
 $kind: http-request
-url: "{{server-url}}/api/festivals"
+url: "{{server-url}}/api/festivals?page=1&size=20&location.region1depth=11&location.region2depth=140"
 method: GET
-body:
-  type: json
-  content: |-
-    [
-        {
-            "key": "eventStartDate",
-            "value": "20260101",
-            "description": "행사시작일(형식 :YYYYMMDD)",
-            "enabled": false
-        },
-        {
-            "key": "eventEndDate",
-            "value": "20261201",
-            "description": "행사종료일(형식 :YYYYMMDD)",
-            "enabled": false
-        },
-        {
-            "key": "tourCategoryCode",
-            "value": "EV",
-            "description": "카테고리 코드",
-            "enabled": true
-        },
-        {
-            "key": "location",
-            "value": {
-                "region1depthName" : "서울특별시",
-                "region2depthName" : "강서구"
-            },
-            "description": "위치 정보",
-            "enabled": true
-        },
-        {
-            "key": "page",
-            "value": "2",
-            "description": "",
-            "enabled": true
-        },
-        {
-            "key": "size",
-            "value": "20",
-            "description": "",
-            "enabled": true
-        }
-    ]
+queryParams:
+  - key: eventStartDate
+    value: "20260101"
+    disabled: true
+    description: 행사시작일(형식 :YYYYMMDD)
+  - key: eventEndDate
+    value: "20261201"
+    disabled: true
+    description: 행사종료일(형식 :YYYYMMDD)
+  - key: tourCategoryCode
+    value: EV
+    disabled: true
+    description: 카테고리 코드
+  - key: page
+    value: "1"
+    disabled: false
+    description: ""
+  - key: size
+    value: "20"
+    disabled: false
+    description: ""
+  - key: location.region1depth
+    value: "11"
+    disabled: false
+    description: 시
+  - key: location.region2depth
+    value: "140"
+    disabled: false
+    description: 구
 auth:
   type: noauth
 order: 3470908172852646

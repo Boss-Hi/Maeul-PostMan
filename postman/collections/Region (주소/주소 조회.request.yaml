@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{server-url}}/api/regions"
+method: GET
+order: 1788628226141
