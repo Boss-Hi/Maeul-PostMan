@@ -1,35 +1,36 @@
 $kind: http-request
-url: "{{server-url}}/api/festivals?page=1&size=20&location.region1depth=11&location.region2depth=140"
+url: "{{server-url}}/api/festivals"
 method: GET
 queryParams:
   - key: eventStartDate
-    value: "20260101"
+    value: ""
     disabled: true
     description: 행사시작일(형식 :YYYYMMDD)
   - key: eventEndDate
-    value: "20261201"
+    value: ""
     disabled: true
     description: 행사종료일(형식 :YYYYMMDD)
   - key: tourCategoryCode
-    value: EV
+    value: ""
     disabled: true
     description: 카테고리 코드
   - key: page
-    value: "1"
-    disabled: false
+    value: ""
+    disabled: true
     description: ""
   - key: size
-    value: "20"
-    disabled: false
+    value: ""
+    disabled: true
     description: ""
   - key: location.region1depth
-    value: "11"
-    disabled: false
+    value: ""
+    disabled: true
     description: 시
   - key: location.region2depth
-    value: "140"
-    disabled: false
+    value: ""
+    disabled: true
     description: 구
 auth:
   type: noauth
+examples: .resources/Festival Index (축제 목록).resources/examples
 order: 3470908172852646

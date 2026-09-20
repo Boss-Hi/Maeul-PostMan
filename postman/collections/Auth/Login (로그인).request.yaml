@@ -5,7 +5,8 @@ body:
   type: json
   content: |-
     {
-        "email" : "test@example.com",
-        "password" : "test"
+        "email" : "",
+        "password" : ""
     }
+examples: .resources/Login (로그인).resources/examples
 order: 1788420105950

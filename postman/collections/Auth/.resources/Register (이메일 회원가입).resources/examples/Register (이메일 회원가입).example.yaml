@@ -1,0 +1,19 @@
+$kind: http-example
+request:
+  url: "{{server-url}}/api/auth/register"
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+          "email" : "test@example.com",
+          "password" : "test",
+          "nickname" : "test"
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1789927234922

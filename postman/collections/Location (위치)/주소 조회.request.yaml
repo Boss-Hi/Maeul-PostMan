@@ -1,7 +1,14 @@
 $kind: http-request
-url: "{{server-url}}/api/location?latitude=37.1&longitude=126.1"
+url: "{{server-url}}/api/location?latitude=&longitude="
 method: GET
 queryParams:
-  latitude: "37.1"
-  longitude: "126.1"
+  - key: latitude
+    value: ""
+    disabled: false
+    description: ""
+  - key: longitude
+    value: ""
+    disabled: false
+    description: ""
+examples: .resources/주소 조회.resources/examples
 order: 1788628226141

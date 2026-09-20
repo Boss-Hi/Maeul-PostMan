@@ -1,6 +1,5 @@
 $kind: http-request
-name: 공통정보조회
-url: "{{open-api-url}}{{open-api-korService2-path}}/detailCommon2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&contentId=126128"
+url: "{{open-api-url}}{{open-api-korService2-path}}/detailCommon2?serviceKey={{open-api-service-key}}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&_type=json&contentId=2039869"
 method: GET
 queryParams:
   - key: serviceKey
@@ -28,7 +27,7 @@ queryParams:
     disabled: false
     description: "응답메세지 형식 : REST방식의 URL호출 시 json값 추가(디폴트 응답메세지 형식은XML)"
   - key: contentId
-    value: "126128"
+    value: "2039869"
     disabled: false
     description: 콘텐츠ID
 order: 1787132509587

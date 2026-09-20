@@ -3,10 +3,11 @@ url: "{{server-url}}/api/festivals/:contentId"
 method: GET
 pathVariables:
   - key: contentId
-    value: "1073801"
+    value: ""
     description: ""
 auth:
   type: bearer
   credentials:
     token: "{{bearer-token}}"
+examples: .resources/Festival Show (축제 조회).resources/examples
 order: 4080384437513754

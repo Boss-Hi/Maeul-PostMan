@@ -5,12 +5,13 @@ body:
   type: json
   content: |-
     {
-      "tour_id": 1013082,
-      "startDate": "20260901",
-      "endDate": "20260903"
+      "tour_id": 0,
+      "startDate": "",
+      "endDate": ""
     }
 auth:
   type: bearer
   credentials:
     token: "{{bearer-token}}"
+examples: .resources/Itinerary Generate (일정 생성).resources/examples
 order: 3000040394779378

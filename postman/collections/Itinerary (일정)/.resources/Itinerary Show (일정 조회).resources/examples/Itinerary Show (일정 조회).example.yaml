@@ -1,0 +1,23 @@
+$kind: http-example
+request:
+  url: "{{server-url}}/api/itinerary/:id"
+  method: GET
+  pathVariables:
+    - key: id
+      value: "14"
+      description: 일정 id
+  body:
+    type: json
+    content: |-
+      {
+        "tour_id": 1806376,
+        "startDate": "20260901",
+        "endDate": "20260903"
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1789927295196

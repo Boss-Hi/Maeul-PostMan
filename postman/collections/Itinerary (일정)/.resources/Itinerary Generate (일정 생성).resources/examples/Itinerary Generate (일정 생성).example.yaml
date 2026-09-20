@@ -1,0 +1,23 @@
+$kind: http-example
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+request:
+  url: "{{server-url}}/api/itinerary/generate"
+  method: POST
+  body:
+    type: json
+    content: |-
+      {
+        "tour_id": 3497502,
+        "startDate": "20260921",
+        "endDate": "20260924"
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1789927283512

@@ -1,0 +1,17 @@
+$kind: http-example
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+request:
+  url: "{{server-url}}/api/festivals/:contentId"
+  method: GET
+  pathVariables:
+    contentId: "1049327"
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1789927276445

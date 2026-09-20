@@ -5,28 +5,14 @@ body:
   type: json
   content: |-
     {
-      "surveyId": 1,
+      "surveyId": 0,
       "answers": [
-        {
-          "questionId": 1,
-          "selectedOptionIds": [1]
-        },
-        {
-          "questionId": 2,
-          "selectedOptionIds": [7]
-        },
-        {
-          "questionId": 3,
-          "selectedOptionIds": [1]
-        },
-        {
-          "questionId": 4,
-          "selectedOptionIds": [1]
-        }
+       
       ]
     }
 auth:
   type: bearer
   credentials:
     token: "{{bearer-token}}"
+examples: .resources/Survey Store (설문 답변 저장).resources/examples
 order: 2468565629755931

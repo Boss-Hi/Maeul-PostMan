@@ -4,14 +4,9 @@ url: "{{server-url}}/api/itinerary/current"
 method: GET
 body:
   type: json
-  content: |-
-    {
-      "tour_id": 1806376,
-      "startDate": "20260901",
-      "endDate": "20260903"
-    }
+  content: ""
 auth:
   type: bearer
   credentials:
-    token: "{{bearerToken}}"
+    token: "{{bearer-token}}"
 order: 4446579204589835

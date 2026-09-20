@@ -5,8 +5,9 @@ body:
   type: json
   content: |-
     {
-        "email" : "test@example.com",
-        "password" : "test",
-        "nickname" : "test"
+        "email" : "",
+        "password" : "",
+        "nickname" : ""
     }
+examples: .resources/Register (이메일 회원가입).resources/examples
 order: 2589327325619069
