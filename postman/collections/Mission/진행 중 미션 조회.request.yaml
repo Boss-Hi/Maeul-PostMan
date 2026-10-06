@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{server-url}}/api/missions/current"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 1791191292590

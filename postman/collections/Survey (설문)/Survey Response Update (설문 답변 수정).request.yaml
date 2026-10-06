@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{server-url}}/api/surveys/responses/:id"
+method: PUT
+pathVariables:
+  - key: id
+    value: ""
+    description: 설문 응답 id
+body:
+  type: json
+  content: |-
+    {
+      "surveyId": 0,
+      "answers": [
+       
+      ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/Survey Response Update (설문 답변 수정).resources/examples
+order: 3280157215049971
