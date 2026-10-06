@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{server-url}}/api/users/me/profile"
+method: PUT
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/Profile Edit (프로필 수정).resources/examples
+order: 1791253025534

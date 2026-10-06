@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{server-url}}/api/surveys/responses/current"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 262502837238496

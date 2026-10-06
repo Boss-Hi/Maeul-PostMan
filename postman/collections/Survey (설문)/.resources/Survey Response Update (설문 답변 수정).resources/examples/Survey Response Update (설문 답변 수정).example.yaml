@@ -1,0 +1,41 @@
+$kind: http-example
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+request:
+  url: "{{server-url}}/api/surveys/responses/:id"
+  method: PUT
+  pathVariables:
+    id: "1"
+  body:
+    type: json
+    content: |-
+      {
+        "surveyResponseId": 1,
+        "answers": [
+          {
+            "id": 1,
+            "optionId": 2
+          },
+          {
+            "id": 2,
+            "optionId": 7
+          },
+          {
+            "id": 3,
+            "optionId": 1
+          },
+          {
+            "id": 4,
+            "optionId": 1
+          }
+        ]
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1789927322751

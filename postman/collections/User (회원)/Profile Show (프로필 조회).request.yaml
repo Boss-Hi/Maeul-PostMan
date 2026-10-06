@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{server-url}}/api/users/me/profile"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 1759483727288524
