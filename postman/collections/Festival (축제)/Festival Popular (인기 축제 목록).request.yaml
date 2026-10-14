@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{server-url}}/api/festivals/popular"
+method: GET
+auth:
+  type: noauth
+order: 3577654436099493
