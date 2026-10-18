@@ -1,0 +1,25 @@
+$kind: http-example
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}{"
+request:
+  url: "{{server-url}}/api/itinerary/:itinerary/days/:id"
+  method: GET
+  pathVariables:
+    - key: itinerary
+      value: "1"
+      description: 일정 id
+    - key: id
+      value: "1"
+      description: 하위 일별 id
+  body:
+    type: json
+    content: ""
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1000

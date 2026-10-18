@@ -1,0 +1,26 @@
+$kind: http-example
+name: Itinerary Schedule update (일정 - 하위 일별 일정 - 상세 일정) 추가 - 축제
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+request:
+  url: "{{server-url}}/api/itinerary/:itinerary/days/:itinearayDay/schedules"
+  method: POST
+  pathVariables:
+    itinerary: "1"
+    itinearayDay: "1"
+  body:
+    type: json
+    content: |-
+      {
+          "type" : "TOUR",
+          "contentId" : "1389228"
+      }
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 2000
