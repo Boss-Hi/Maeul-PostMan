@@ -1,0 +1,17 @@
+$kind: http-request
+name: Itinerary Schedule update (일정 - 하위 일별 일정 - 상세 일정) 수정
+url: "{{server-url}}/api/itinerary/:itinerary/days/:itinearayDay/schedules/:id"
+method: PUT
+pathVariables:
+  itinerary: ""
+  itinearayDay: ""
+  id: ""
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/Itinerary Schedule update (일정 - 하위 일별 일정 - 상-2.resources/examples
+order: 4446449907423402

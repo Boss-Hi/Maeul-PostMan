@@ -1,0 +1,23 @@
+$kind: http-example
+name: Itinerary Schedule Show (일정 - 하위 일별 일정 - 상세 일정 조회)
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}{"
+request:
+  url: "{{server-url}}/api/itinerary/:itinerary/days/:itinearayDay/schedules/:id"
+  method: GET
+  pathVariables:
+    itinerary: "1"
+    itinearayDay: "1"
+    id: "1"
+  body:
+    type: json
+    content: ""
+response:
+  statusCode: 200
+  statusText: ""
+  body:
+    type: json
+    content: ""
+order: 1000

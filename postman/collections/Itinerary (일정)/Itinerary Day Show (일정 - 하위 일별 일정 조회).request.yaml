@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{server-url}}/api/itinerary/:itinerary/days/:id"
+method: GET
+pathVariables:
+  - key: itinerary
+    value: ""
+    description: 일정 id
+  - key: id
+    value: ""
+    description: 하위 일별 id
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}{"
+examples: .resources/Itinerary Day Show (일정 - 하위 일별 일정 조회).resources/examples
+order: 4440089450219246
