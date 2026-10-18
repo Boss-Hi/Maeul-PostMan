@@ -13,4 +13,5 @@ auth:
   type: bearer
   credentials:
     token: "{{bearer-token}}"
+examples: .resources/Itinerary Schedule Show (일정 - 하위 일별 일정 - 상세-1.resources/examples
 order: 4446400016622593
