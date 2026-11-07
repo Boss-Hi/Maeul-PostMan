@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{server-url}}/api/itinerary/kafka/generate"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+      "tour_id": 0,
+      "startDate": "",
+      "endDate": ""
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/Itinerary Generate (일정 kafka 생성).resources/examples
+order: 3808863694093315
