@@ -4,33 +4,57 @@ auth:
   credentials:
     token: "{{bearer-token}}"
 request:
-  url: "{{server-url}}/api/surveys/responses/:id"
+  url: "{{server-url}}/api/surveys/responses/current"
   method: PUT
-  pathVariables:
-    id: "1"
   body:
     type: json
     content: |-
       {
-        "surveyResponseId": 1,
-        "answers": [
-          {
-            "id": 1,
-            "optionId": 2
-          },
-          {
-            "id": 2,
-            "optionId": 7
-          },
-          {
-            "id": 3,
-            "optionId": 1
-          },
-          {
-            "id": 4,
-            "optionId": 1
-          }
-        ]
+          "answers": [
+              {
+                  "questionId": 1,
+                  "selectedOptionIds": [
+                      1
+                  ]
+              },
+              {
+                  "questionId": 2,
+                  "selectedOptionIds": [
+                      7
+                  ]
+              },
+              {
+                  "questionId": 3,
+                  "selectedOptionIds": [
+                      11
+                  ]
+              },
+              {
+                  "questionId": 4,
+                  "selectedOptionIds": [
+                      20, 21
+                  ]
+              },
+              {
+                  "questionId": 5,
+                  "selectedOptionIds": [
+                      23
+                  ]
+              },
+              {
+                  "questionId": 6,
+                  "selectedOptionIds": [
+                      27
+                  ]
+              },
+              {
+                  "questionId": 7,
+                  "selectedOptionIds": [
+                      33
+                  ]
+              }
+
+          ]
       }
 response:
   statusCode: 200

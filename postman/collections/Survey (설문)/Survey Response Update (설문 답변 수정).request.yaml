@@ -1,10 +1,6 @@
 $kind: http-request
-url: "{{server-url}}/api/surveys/responses/:id"
+url: "{{server-url}}/api/surveys/responses/current"
 method: PUT
-pathVariables:
-  - key: id
-    value: ""
-    description: 설문 응답 id
 body:
   type: json
   content: |-
