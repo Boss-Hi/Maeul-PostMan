@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{server-url}}/api/timeline/points"
+method: POST
+body:
+  type: json
+  content: |-
+    {
+        "points": [
+            {
+                "latitude": 37.5264,
+                "longitude": 126.8962,
+                "accuracy": 12.5,
+                "recordedAt": "2026-11-07T09:00:00+09:00"
+            }
+        ]
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/위치 기록 전송.resources/examples
+order: 1000
