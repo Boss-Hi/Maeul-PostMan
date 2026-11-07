@@ -2,7 +2,7 @@ $kind: http-example
 auth:
   type: noauth
 request:
-  url: "{{server-url}}/api/festivals?page=1&size=20&location.region1depth=11&location.region2depth=140"
+  url: "{{server-url}}/api/festivals?page=1&size=20&location.region1depth=11&location.region2depth=140&status=ONGOING"
   method: GET
   queryParams:
     - key: eventStartDate
@@ -33,6 +33,10 @@ request:
       value: "140"
       disabled: false
       description: 구
+    - key: status
+      value: ONGOING
+      disabled: false
+      description: ALL/ONGOING/ENDED
 response:
   statusCode: 200
   statusText: ""

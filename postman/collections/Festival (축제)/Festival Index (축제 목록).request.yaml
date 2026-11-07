@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{server-url}}/api/festivals"
+url: "{{server-url}}/api/festivals?status=ONGOING"
 method: GET
 queryParams:
   - key: eventStartDate
@@ -30,6 +30,10 @@ queryParams:
     value: ""
     disabled: true
     description: 구
+  - key: status
+    value: ONGOING
+    disabled: false
+    description: ALL/ONGOING/ENDED
 auth:
   type: noauth
 examples: .resources/Festival Index (축제 목록).resources/examples
