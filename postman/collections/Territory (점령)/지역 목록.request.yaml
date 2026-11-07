@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{server-url}}/api/territory/regions"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/지역 목록.resources/examples
+order: 2000

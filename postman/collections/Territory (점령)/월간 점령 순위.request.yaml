@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{server-url}}/api/territory/regions/:regions/ranking"
+method: GET
+pathVariables:
+  - key: regions
+    value: "11200"
+    description: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/월간 점령 순위.resources/examples
+order: 3000
