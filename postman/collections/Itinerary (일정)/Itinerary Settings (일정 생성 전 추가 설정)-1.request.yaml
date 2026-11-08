@@ -1,0 +1,12 @@
+$kind: http-request
+name: Itinerary Settings (일정 생성 전 추가 설정)
+url: "{{server-url}}/api/itinerary/settings"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 4446579204590835
