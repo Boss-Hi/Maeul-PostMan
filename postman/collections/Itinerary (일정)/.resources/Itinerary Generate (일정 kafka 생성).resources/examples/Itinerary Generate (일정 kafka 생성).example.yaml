@@ -11,8 +11,11 @@ request:
     content: |-
       {
         "tour_id": 3497502,
-        "startDate": "20261010",
-        "endDate": "20261015"
+        "startDate": "20261110",
+        "endDate": "20261115",
+        "pace" : "RELAXED",
+        "dayStartTime" : "09:00",
+        "dayEndTime" : "22:00"
       }
 response:
   statusCode: 200
