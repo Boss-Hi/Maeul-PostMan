@@ -3,7 +3,7 @@ url: "{{server-url}}/api/territory/regions/:regions/ranking"
 method: GET
 pathVariables:
   - key: regions
-    value: "11200"
+    value: "26720"
     description: ""
 auth:
   type: bearer
