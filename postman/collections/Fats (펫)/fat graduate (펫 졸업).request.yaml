@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{server-url}}/api/fats/:fat/graduate"
+method: POST
+pathVariables:
+  - key: fat
+    value: ""
+    description: fat id
+body:
+  type: json
+  content: |-
+    {
+        "regionCode": "28",
+        "code": "200"
+    }
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+examples: .resources/fat graduate (펫 졸업).resources/examples
+order: 1505

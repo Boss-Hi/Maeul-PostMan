@@ -1,11 +1,8 @@
 $kind: http-request
-url: "{{server-url}}/api/timeline?date=2026-11-07"
+url: "{{server-url}}/api/timeline?date=2026-11-15"
 method: GET
 queryParams:
-  - key: date
-    value: 2026-11-07
-    disabled: false
-    description: ""
+  date: 2026-11-15
 auth:
   type: bearer
   credentials:

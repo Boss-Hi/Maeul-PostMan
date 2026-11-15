@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{server-url}}/api/fats/ranking?regionCode=26&code=710"
+method: GET
+queryParams:
+  - key: regionCode
+    value: "26"
+    disabled: false
+    description: region_subdivisions.region_code
+  - key: code
+    value: "710"
+    disabled: false
+    description: region_subdivisions.code
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 1132

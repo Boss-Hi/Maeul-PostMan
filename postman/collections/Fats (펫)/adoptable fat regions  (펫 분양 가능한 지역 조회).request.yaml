@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{server-url}}/api/fats/regions"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{bearer-token}}"
+order: 1085
